@@ -7,7 +7,7 @@ def QuickSort(li):
         BaseValue = li[0]               #递归条件
         less = [element for element in li[1 : ] if element <= BaseValue]    #所有小于基础值构成的列表
 
-        more = [element for element in li[1 : ] if element > BaseValue]     #所有大于基值构成了列表
+        more = [element for element in li[1 : ] if element > BaseValue]     #所有大于基值构成的列表
 
         return QuickSort(less) + [BaseValue] + QuickSort(more)
 
